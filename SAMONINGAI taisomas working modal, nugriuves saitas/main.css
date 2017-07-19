@@ -1,0 +1,817 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  text-align: center; 
+}
+
+
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#f2f2f2;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #f2f2f2;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.section{
+	text-align: center;
+}
+
+/* Menu
+ * --------------------------------------- */
+#menu li {
+    font-size: 50px;
+	display:inline-block;
+	margin: 10px;
+    color: transparent;
+   text-shadow: 0 0 7px rgba(0,0,0,0.3);
+   
+}
+#menu li.active{
+	color: #fff;
+    text-shadow: 1px 1px 1px white;
+    
+    
+}
+
+#menu li:hover {
+    text-shadow: 1px 1px 10px white;
+    
+}
+
+#menu li a{
+	text-decoration:none;
+	    color: transparent;
+   
+
+    
+}
+#menu li.active a:hover{
+    text-shadow: 1px 1px 4px white; 
+    
+    
+}
+
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+    transition: text-shadow 0.5s;
+}
+#menu li.active a{
+	color: #fff;
+    text-shadow: 1px 1px 5px dimgray;
+    font-size: 54px;
+}
+#menu{
+	position:fixed;
+	top:-1%;
+	right:20%;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.twitter-share-button{
+	position: fixed !important;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+
+/*
+#download{
+	margin: 10px 0 0 0;
+	padding: 15px 10px;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #49afcd;
+	background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -ms-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from( #5bc0de),to( #2f96b4));
+	background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: -o-linear-gradient(top, #5bc0de, #2f96b4);
+	background-image: linear-gradient(top, #5bc0de, #2f96b4);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5bc0de', endColorstr='#2f96b4', GradientType=0);
+	border-color: #2f96b4 #2f96b4 #1f6377;
+	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	display: inline-block;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+}
+#download a{
+	text-decoration:none;
+	color:#fff;
+}
+#download:hover{
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+	background-color: #2F96B4;
+	background-position: 0 -15px;
+	-webkit-transition: background-position .1s linear;
+	-moz-transition: background-position .1s linear;
+	-ms-transition: background-position .1s linear;
+	-o-transition: background-position .1s linear;
+	transition: background-position .1s linear;
+}
+
+#infoMenu{
+	height: 20px;
+	color: #f2f2f2;
+	position:fixed;
+	z-index:70;
+	bottom:0;
+	width:100%;
+	text-align:right;
+	font-size:0.9em;
+	padding:8px 0 8px 0;
+}
+#infoMenu ul{
+	padding: 0 40px;
+}
+#infoMenu li a{
+	display: block;
+	margin: 0 22px 0 0;
+	color: #333;
+}
+#infoMenu li a:hover{
+	text-decoration:underline;
+}
+#infoMenu li{
+	display:inline-block;
+	position:relative;
+}
+#examplesList{
+	display:none;
+	background: #282828;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 20px;
+	float: left;
+	position: absolute;
+	bottom: 29px;
+	right: 0;
+	width:638px;
+	text-align:left;
+}
+#examplesList ul{
+	padding:0;
+}
+#examplesList ul li{
+	display:block;
+	margin: 5px 0;
+}
+#examplesList ul li a{
+	color: #BDBDBD;
+	margin:0;
+}
+#examplesList ul li a:hover{
+	color: #f2f2f2;
+}
+#examplesList .column{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#examplesList h3{
+	color: #f2f2f2;
+	font-size: 1.2em;
+	margin: 0 0 15px 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding: 0 0 5px 0;
+}
+*/
+/* Section 1
+ * --------------------------------------- */
+#section1 {
+	background-color: antiquewhite;
+}
+/*
+#section1 h1{
+	color: #444;
+    
+}
+#section1 p{
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+*/
+/*
+#section1 img{
+	margin: 20px 0;
+	opacity: 0.7;
+}
+*/
+
+/* Section 2
+ * --------------------------------------- */
+#section2 h1,
+#section2 p{
+	z-index: 3;
+}
+#section2 p{
+	opacity: 0.8;
+}
+
+#section2 #colors{
+	right: 60px;
+	bottom: 0;
+	position: absolute;
+	height: 413px;
+	width: 258px;
+	background-image: url(imgs/colors.gif);
+	background-repeat: no-repeat;
+}
+
+/* Section 3
+ * --------------------------------------- */
+/*
+#section3 #colors{
+	left: 60px;
+	bottom: 0;
+}
+#section3 p{
+	color: #757575;
+}
+*/
+
+#colors2,
+#colors3{
+	position: absolute;
+	height: 163px;
+	width: 362px;
+	z-index: 1;
+	background-repeat: no-repeat;
+	left: 0;
+	margin: 0 auto;
+	right: 0;
+}
+#colors2{
+	background-image: url(imgs/colors2.gif);
+	top:0;
+}
+#colors3{
+	background-image: url(imgs/colors3.gif);
+	bottom:0;
+}
+
+/* Section 4
+ * --------------------------------------- */
+#section4 p{
+	opacity: 0.6;
+}
+
+/* Overwriting fullPage.js tooltip color
+* --------------------------------------- */
+#pp-nav.custom .pp-tooltip{
+	color: white;
+}
+
+
+.twitter-share-button{
+	position: fixed;
+	z-index: 99;
+	right: 149px;
+	top: 9px;
+}
+#starGithub{
+	position: fixed;
+	z-index: 99;
+	right: 264px;
+	top: 9px;
+	width: 90px;
+}
+
+/*------------------------Pauliaus Kodas---------*/
+
+
+
+
+/*-----------------------------------------BESIKEICIANTI SPALVA--------------*/
+#background1 {
+    background: #bdb9ee;
+    background: linear-gradient(to bottom right, #bdb9ee, #f0ccb1);
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0) 0%, rgba(125, 99, 152, 1) 100%);
+    animation: background1 15s infinite;
+
+}
+
+/*
+@keyframes background1 {
+    
+    0% {background-color:#f0ccb1;}
+    10%   {background-color:#bdb9ee;}
+    20%   {background-color:#bdb9ee;}
+    40%  {background-color:#ddc5c8;}
+    50%  {background-color:#ddc5c8;}
+    70% {background-color:#f0ccb1;}
+    80% {background-color:#f0ccb1;}
+    100% {background-color:#f0ccb1;}
+}
+*/
+
+#background2 {
+    background: #bdb9ee;
+    background: linear-gradient(to bottom right, red, green);
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(50, 50, 70, 1) 100%);
+    animation: background1 15s infinite;
+}
+
+/*
+@keyframes background2 {    0% {
+        background-color: #8cdde1;
+    }
+    10% {
+        background-color: #e1d4a8;
+    }
+    20% {
+        background-color: #c3d7bc;
+    }
+    40% {
+        background-color: #aadacc;
+    }
+    50% {
+        background-color: #9fdbd4;
+    }
+    70% {
+        background-color: #9cdbd5;
+    }
+    80% {
+        background-color: #8cdde1;
+    }
+    100% {
+        background-color: #8cdde1;
+    }
+}
+*/
+
+#background3 {
+    background: #bdb9ee;
+    background: linear-gradient(to bottom right, red, green);
+    background-image: linear-gradient(to bottom right, rgba(50, 0, 50, 0) 0%, rgba(50, 50, 120, 1) 100%);
+    animation: background1 15s infinite;
+}
+
+/*
+@keyframes background2 {    0% {
+        background-color: #8cdde1;
+    }
+    10% {
+        background-color: #e1d4a8;
+    }
+    20% {
+        background-color: #c3d7bc;
+    }
+    40% {
+        background-color: #aadacc;
+    }
+    50% {
+        background-color: #9fdbd4;
+    }
+    70% {
+        background-color: #9cdbd5;
+    }
+    80% {
+        background-color: #8cdde1;
+    }
+    100% {
+        background-color: #8cdde1;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+/*-------------       ---------     --BESIKEICIANTI SPALVA-------END---*/
+
+/*-------------------------------------FONT NUSTATYMAI-------------------*/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.divbug {
+    transform: rotate(-90deg);
+    color: rgba(255,255,255, 0);
+/*    text-shadow: 1px 1px 1px white;*/
+    line-height: 14;  
+}
+
+.citata {
+     color: rgba(255,255,255, 0.7);
+     
+}
+
+/*-------------------------------------FONT NUSTATYMAI------------END-------*/
+
+
+/*-----------------------------Round ir LOGO-------------------------------*/
+
+.round {
+    filter: drop-shadow(0px 0px 14px gray );
+    padding:6px;
+    transition: filter 5s;
+}
+
+.round {transition-timing-function: ease-in;}
+
+.round:hover {
+    filter: contrast(20%) drop-shadow(2px 2px 14px white );
+
+}
+
+.roundborder {
+    border-radius: 200px;
+    transition: border;
+    box-sizing: border-box;
+}
+
+
+.turinys {
+    
+    margin-top: 10%;
+   
+}
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    position: absolute;
+    z-index: 10;
+    top: 98%;
+    font-size: 12px;
+    box-shadow: 4px 4px 40px rgba(0,0,0,0.2);
+}
+/*                          -       -   PIRMASIS PUSLAPIS END-*/
+
+
+
+
+
+
+
+/*---------------------------Round Ir LOGO--------------------END-----------*/
+
+/*-----------------------------MISC + quote gen-------*/
+.fulscreenbug{
+    height: 100%;       /*Pirmame puslapyje pilnai nerodydavo height*/
+}
+
+#quote{
+	margin:-30px auto ;
+	padding: 20px;
+	width: 100%;
+    height: 20px;
+   
+}
+
+#quoteContainer{
+	padding:10px;
+	margin:30px auto;
+	text-align: center;
+    height:70px;
+    
+}
+#buttonContainer{
+	width: 100%;
+	text-align: center;
+}
+
+#quoteGenius{
+	font-style: italic;
+	font-weight: 600;
+	text-align: center;
+    margin-top: 0.5%;
+}
+
+
+
+/*-----------------------------MISC + quote gen--- END----*/
+
+
+/*                  FORMA VALIDA            */
+
+
+label {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+#labelfirst {
+    margin-top: 8.2%;
+}
+
+.aprasymasbox {
+    height: 415px;
+    width: 100%;
+    color:black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.box-pozicija {
+    margin-top: 3.3%;
+}
+
+
+.btn {
+ 
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 2px #eee;
+  
+ }
+
+.btndropdown {
+ 
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  color: white;
+ /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+  box-shadow: 0 0 2px #eee;
+  
+ }
+
+.btn:hover {
+  background-position: right center; 
+}
+
+.btn-2 {
+  background-color: rgba(255,255,255, 0);
+    
+}
+
+
+/* rewrite some rules from bootstrap */
+
+.has-feedback .form-control-feedback {
+    top: 0;
+}
+
+/*
+			 * Special CSS classes
+			 * for jQuery - Valida
+			 *
+			 * You can try to change the styles via Firebug (Firefox) or related plugin.
+			 */
+
+.at-error {
+    /* placed on a error labels */
+    color: black;
+    margin: 0px 0;
+}
+
+.at-warning {
+    /* placed on a warning (invalid) labels */
+    color: black;
+    margin: 0px 0;
+}
+.at-invalid {
+    /* placed on a invalid fields (which do not match with their filters or masks) */
+}
+.at-required {
+    /* placed on a required fields (which are not filled) */
+}
+.at-description {
+    /* placed on description paragrapher, right after TEXTAREA fields. */
+}
+.at-description>span {
+    /* into description paragrapher, right after TEXTAREA fields there are 2 span TAGs. */
+}
+.at-required-highlight {
+    /* highlight required form fields */
+    color: mediumvioletred;
+}
+
+
+/*                  FORMA VALIDA    END         */
+
+
+/*
+.riba {
+    border: solid white 1px;
+}
+*/
+/* -------------------------------        ------SEARCH     ----------------*/
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.searchdiv {
+    overflow-y: scroll; 
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1%;
+
+}
+
+/*
+tr, td {
+    font-size: 20px;
+    border-top: solid 2px;
+}
+*/
+
+/*
+th {
+    position:fixed;
+    
+}
+*/
+
+#miestai, #tipas {
+    color:black;
+    
+}
+.dropdown {
+    text-transform: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+/*------------------------------MODAL-------------------------*/
+
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/*--------------------------MEDIA--------------------------*/
+
+body{
+   animation: fadein 2s;
+}
+
+@keyframes fadein{
+   from{opacity:0;}
+   to{opacity:1;}
+}
+
+
+
+@media screen and (max-width: 1300px){
+     #menu li a, #menu li.active a {        
+    font-size: 30px;
+	margin: 0px;
+    color: white;
+   
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .btn {        
+    width: 45%;
+    height: 130px;
+    font-size: 30px;
+    
+    
+    }
+}
+
+/*
+@media screen and (max-width: 768px){
+     .formosmedijos {        
+    border: solid black;
+   
+    }
+}
+*/
+
+
+.easy-modal,
+.easy-modal-animated {
+		width: 600px;
+		padding: 2em;
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.35);
+		background-color: white;
+	}
+
+
+
+
+
+
