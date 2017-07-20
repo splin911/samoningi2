@@ -9,56 +9,44 @@
                     
 <select class="btnforma btn-default dropdown-toggle dropdown" id="miestai" name="fetchby">
 <!--paimti is duombazes skirtingus komanda is:: select un-->
-    <option value="" disabled selected>Atrinkti pagal miestą</option>
+   <option value=""></option>
     <option value="Vilnius">Vilnius</option>
     <option value="Kaunas">Kaunas</option>
     <option value="Klaipėda">Klaipėda</option>
-    <option value="Siauliai">Šiauliai</option>
-    <option value="Panevezys">Panevėžys</option>
+    <option value="Šiauliai">Šiauliai</option>
+    <option value="Panevėžys">Panevėžys</option>
     <option value="Alytus">Alytus</option>
-    <option value="Marijampole">Marijampolė</option>
+    <option value="Marijampolė">Marijampolė</option>
     <option value="Utena">Utena</option>
-    <option value="Telsiai">Telšiai</option>
+    <option value="Telšiai">Telšiai</option>
                         
-    <option value="Vilniaus">Vilniaus apskritis</option>
-    <option value="Kauno">Kauno apskritis</option>
-    <option value="Klaipedos">Klaipėdos apskritis</option>
-    <option value="Siauliu">Šiaulių apskritis</option>
-    <option value="Panevezio">Panevežio apskritis</option>
-    <option value="Alytaus">Alytaus apskritis</option>
-    <option value="Marijampoles">Marijampolės apskritis</option>
-    <option value="Taurages">Tauragės apskritis</option>
-    <option value="Utenos">Utenos apskritis</option>
-    <option value="Telsiu">Telšių apskritis</option>
+    <option value="Vilniaus apskr.">Vilniaus apskritis</option>
+    <option value="Kauno apskr.">Kauno apskritis</option>
+    <option value="Klaipėdos apskr.">Klaipėdos apskritis</option>
+    <option value="Šiaulių apskr.">Šiaulių apskritis</option>
+    <option value="Panevežio apskr.">Panevežio apskritis</option>
+    <option value="Alytaus apskr.">Alytaus apskritis</option>
+    <option value="Marijampolės apskr.">Marijampolės apskritis</option>
+    <option value="Tauragės apskr.">Tauragės apskritis</option>
+    <option value="Utenos apskr.">Utenos apskritis</option>
+    <option value="Telšių apskr.">Telšių apskritis</option>
 </select>
 
 <select class="btnforma btn-default dropdown-toggle dropdown" id="tipas" name="fetchby2" placeholder="hey">
     
     
-    <option value="" disabled selected>Atrinkti pagal tipą</option>
-    <option value="meditacija">Meditacijos praktika, meditacija</option>
-    <option value="paskaita">Paskaita</option>
-    <option value="stovykla">Stovykla, festivalis, retritas</option>
-    <option value="mokymai">Mokymai</option>
-    <option value="kita">Kita</option>
+    <option value=""></option>
+    <option value="Meditacijos praktika, meditacija">Meditacijos praktika, meditacija</option>
+    <option value="Paskaita">Paskaita</option>
+    <option value="Stovykla, festivalis, retritas">Stovykla, festivalis, retritas</option>
+    <option value="Mokymai">Mokymai</option>
+    <option value="Kita">Kita</option>
 </select>
                      
                        </div>
             </div>
             
-<!--
-                  <tr class="fixedtr">
-<th>Pavadinimas</th>
-<th>Data</th>
-<th>Email</th>
-<th>Miestas</th>
-<th>Tipas</th>
-<th>Registracija</th>
-<th>Aprasymas</th>
 
-</tr>
-       
--->
             <br>
             <!----------------------------------------------MENU END------------------------------------------->
             <div class="col-md-10 col-md-offset-1">

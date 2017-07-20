@@ -27,7 +27,7 @@
     <ul id="menu">
         <li data-menuanchor="page1"><a href="#page1">samoningai</a></li>
         <li data-menuanchor="page2"><a href="#page2">dalintis</a></li>
-        <li data-menuanchor="page3"><a href="#page3"  id="date"></a></li>
+        <li data-menuanchor="page3"><a href="#page3">renginiai</a></li>
     </ul>
 
      

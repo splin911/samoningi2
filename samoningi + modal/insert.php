@@ -31,6 +31,9 @@
     $registracija = $_GET["registracija"];
     $aprasymas = $_GET["aprasymas"];
     $tinkamas_rodyti = $_GET["tinkamas_rodyti"];
+    $unikalusid = $_GET["unikalusid"];
+    $nuoroda = $_GET["nuoroda"];
+
 
     
     
@@ -67,6 +70,8 @@ $mail->Body    =
     "<h3>Data</h3> " . $data_ . "<br>" .  
     "<h3>Email</h3> " . $email . "<br>" .
     "<h3>Vieta</h3> " . $miestas . "<br>" .
+    "<h3>Nuoroda</h3> " . $nuoroda . "<br>" .
+    "<h3>UnikalusID</h3> " . $unikalusid . "<br>" .
     "<h3>Tipas</h3> " . $tipas . "<br>" .
     "<h3>Ar butina registracija? y - butina, jei nieko - nebutina </h3>  " . $registracija . "<br>" .
     "<h3>Aprasymas</h3> " . nl2br($aprasymas) . "<br>" ; 
@@ -87,19 +92,21 @@ if(!$mail->send()) {
 
 
 
-      function kurtiSkelbima($pavadinimas, $data_, $email, $miestas, $tipas, $registracija, $aprasymas, $tinkamas_rodyti) {
+      function kurtiSkelbima($pavadinimas, $data_, $email, $miestas, $tipas, $registracija, $aprasymas, $tinkamas_rodyti, $unikalusID, $nuoroda) {
           $sql = "INSERT INTO skelbimai (pavadinimas, data_, email, miestas, tipas, registracija, aprasymas,
-tinkamas_rodyti, nuoroda, telnr, laisvas1, laisvas2) VALUES ('$pavadinimas', '$data_', '$email', '$miestas', '$tipas', '$registracija', '$aprasymas',
-'$tinkamas_rodyti', '$nuoroda', '$telnr', '$laisvas1', '$laisvas2' )";
+tinkamas_rodyti, nuoroda, unikalusID, laisvas1, laisvas2) VALUES ('$pavadinimas', '$data_', '$email', '$miestas', '$tipas', '$registracija', '$aprasymas',
+'$tinkamas_rodyti', '$nuoroda', '$unikalusID', '$laisvas1', '$laisvas2' )";
           $connect = connect_DB();
           $status = mysqli_query($connect, $sql);
           if(!$status) {
             echo "Skelbimo ideti nepavyko:" . mysqli_error($connect) . " <br>"; 
          } else {
-              header("Location: redirect.php");
-              die();         
-   } }
+              
+            echo "Skelbimas idetas:" . mysqli_error($connect) . " <br>"; }}
+//              header("Location: redirect.php");
+//              die();         
+//   } }
 
-kurtiSkelbima($pavadinimas, $data_, $email, $miestas, $tipas, $registracija, $aprasymas, $tinkamas_rodyti);
+kurtiSkelbima($pavadinimas, $data_, $email, $miestas, $tipas, $registracija, $aprasymas, $tinkamas_rodyti, $unikalusid, $nuoroda);
     
     ?>

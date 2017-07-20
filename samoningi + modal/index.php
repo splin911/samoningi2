@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="lib/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     
+    
+
+
     <link rel="stylesheet" type="text/css" href="main.css" />
 
 
@@ -50,7 +53,7 @@
         
        
     </div>
-
+<script src="https://use.fontawesome.com/111b848bf1.js"></script>
     <script src="lib/jquery-3.2.1.min.js"></script>
     <script src="lib/tilt.jquery.js"></script>
     <script src="lib/valida.2.1.7.js"></script>

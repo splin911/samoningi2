@@ -3,6 +3,7 @@
           
         <!--                -----------------------------   turinys  -->
         <div class="turinys">
+            
             <div class="row">
                 <div data-tilt class="col-xs-4 col-xs-offset-4 ">
                     <div>

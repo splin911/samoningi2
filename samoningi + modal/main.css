@@ -516,7 +516,29 @@ footer {
     box-shadow: 4px 4px 40px rgba(0,0,0,0.2);
 }
 /*                          -       -   PIRMASIS PUSLAPIS END-*/
+/*----------------------------------------------------DALINTIS*/
 
+
+#dalintisover {
+    overflow-y: scroll; 
+    height: 900px;
+    background-color: rgba(0, 0, 0, 0.2);
+   
+}
+
+/*
+.dalintisforma1 {
+    margin-top: 20%;
+}
+
+.dalintisrow {
+    margin-bottom: 200px;
+}
+
+.dalintisforma2 {
+    margin-top: 20%;
+}
+*/
 
 
 
@@ -569,7 +591,7 @@ label {
     margin-bottom: 15px;
     font-size: 20px;
 }
-#labelfirst {
+.labelfirst {
     margin-top: 8.2%;
 }
 
@@ -581,9 +603,7 @@ label {
     padding: 10px;
 }
 
-.box-pozicija {
-    margin-top: 3.3%;
-}
+
 
 
 .btn {
@@ -667,11 +687,9 @@ label {
 /*                  FORMA VALIDA    END         */
 
 
-/*
 .riba {
     border: solid white 1px;
 }
-*/
 /* -------------------------------        ------SEARCH     ----------------*/
 
 
@@ -764,11 +782,17 @@ body{
 */
 
 .modalinisisore {
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-color: rgba(0,0,0,0.3);
-    margin: 20px;
     cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 8%;
+}
+
+.modalinisisore:hover {
+    
+    background-color: rgba(0,0,0,0.5);
 }
 
 div.modalinisisore h3 {
@@ -780,17 +804,25 @@ div.modalinisisore h3 {
 
 div.modalinisisore h2 {
     font-size: 2em;
-    margin:1%;
+    margin-top:5%;
+    margin-bottom: 5%;
 }
 
 
 div.modalinisisore h4 {
-    color: red;
-    margin:1%;
+    color: white;
+   padding: 1%;
+    text-align: left;
+    font-size: 20px;
+    
 }
 
 div.modalinisisore h5 {
-    color: blue;
+    color: white;
+     margin-top:1%;
+     font-size: 20px;
+    text-align: left;
+    padding: 1%;
 	
 }
 
@@ -805,14 +837,78 @@ div a {
     font-size: 30px;
     cursor: pointer;
 }
-
 .easy-modal,
 .easy-modal-animated {
-		width: 600px;
+		width: 900px;
+        height: 70%;
 		padding: 2em;
 		box-shadow: 1px 1px 3px rgba(0,0,0,0.85);
-		background-color: darkgray;
-        color: white;
+		background-color: white;
+        color: black;
         
-	}
+}
+
+
+div.modalinisvidus .modalcolor {
+    background-color: thistle;
+    
+}
+div.modalinisvidus .modalcolor2 {
+    background-color: palevioletred;
+    
+}
+
+div.modalinisvidus h3 {
+    color: black;
+    padding:1%;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+div.modalinisvidus h4  {
+    color: black;
+    padding:1%;
+    font-size: 17px;
+    
+}
+
+
+div.modalinisvidus2 h6 {
+    color: black;
+    font-size: 17px;
+    padding:2%;
+}
+
+div.modalinisvidus3 h5 {
+    color: black;
+    font-size: 20px;
+    padding:1%;
+     text-transform: uppercase;
+}
+
+div.modalinisvidus3 h6 {
+    color: black;
+    font-size: 17px;
+    padding:1%;
+}
+
+#modalouzdarytojas {
+    font-size: 6em;
+    position:absolute;
+    z-index: 100;
+    
+}
+
+#nuoroda {
+    color: black;
+    font-size: 17px;
+    padding:1%;
+}
+
+
+
+
+
+
+
 

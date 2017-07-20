@@ -51,7 +51,7 @@
                 autoOpen: false,
                 overlayOpacity: 0.2,
                 overlayColor: '#000',
-                overlayClose: true,
+                overlayClose: false, //////as pakeiciau
                 overlayParent: 'body',
                 closeOnEscape: true,
                 closeButtonClass: '.close',
@@ -63,7 +63,7 @@
                     return (function (value) {
                         return value === -Infinity ? 0 : value + 1;
                     }(Math.max.apply(Math, $.makeArray($('*').map(function () {
-                        return $(this).css('z-index');
+                        return $(this).css('zz-index'); /////ash sugadinau
                     }).filter(function () {
                         return $.isNumeric(this);
                     }).map(function () {
@@ -121,7 +121,7 @@
                         'z-index': modalZ
                     });
 
-                    $overlay.css({'z-index': overlayZ, 'display': 'block'});
+                    $overlay.css({'z-index': overlayZ, 'display': 'block'}); //indexx sugadinau ASH
 
                     if (o.onOpen && typeof o.onOpen === 'function') {
                         // onOpen callback receives as argument the modal window
