@@ -76,8 +76,7 @@ function trintiSenusSkelbimus(){
 </script>
 
 <div id="table-container">
-<div class="container-fluid">
-    <div class="row">
+
     <?php
   $query="SELECT * FROM skelbimai WHERE
   (tinkamas_rodyti='tinkamas') OR (unikalusID='skelbejas') OR (unikalusID='skelbejas2')"; 
@@ -89,77 +88,35 @@ function trintiSenusSkelbimus(){
         {
            ?> 
   
-<div class="col-lg-3"> 
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target=".myModal<?php echo $uniqueid; ?>">Open Modal</button>
 
-<a><div class="modalinisisore easy-modal-open"   href=".modal1<?php echo $uniqueid; ?>"></a> 
-<h3><?php echo $row['tipas'] ?></h3>  
-<h2><?php echo $row['pavadinimas'] ?></h2> 
-    <hr>
-<h4><i class="fa fa-compass" aria-hidden="true"></i>
-<?php echo $row['miestas'] ?></h4>
-    <hr>
-<h5><i class="fa fa-calendar-o" aria-hidden="true"></i>
-<?php echo $row['data_'] ?></h5>       
- </div>
+  <!-- Modal -->
+  <div class="modal fade" class="myModal<?php echo $uniqueid; ?>" role="dialog">
+    <div class="modal-dialog">
     
-<div class="modalinisvidus easy-modal modal1<?php echo $uniqueid; ?>">
-<div class="row">
-    <div class="col-md-6 modalcolor">
-         
-        <h3>Renginio pradžios data</h3>
-        <h4><i class="fa fa-calendar-o" aria-hidden="true"></i>
-            <?php echo $row['data_']?>
-        </h4>
-    </div>
-    <div class="col-md-6 modalcolor2">
-        <h3>Registracija</h3>
-        <h4><i class="fa fa-address-card-o" aria-hidden="true"></i>
-            <?php echo $row['registracija'] ?>
-            <button id="modalouzdarytojas" class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
-           
-        </h4>
-    </div>
-    <hr>
-</div>
-<!----------------------------------------------tipas ir vieta-->
-<div class="row modalinisvidus2">
-    <div class="col-md-6">
-        <h6><i class="fa fa-flag-o" aria-hidden="true"></i>
-            <?php echo $row['tipas'] ?>
-        </h6>
-    </div>
-    <div class="col-md-6">
-        <h6><i class="fa fa-map-o" aria-hidden="true"></i>
-
-            <?php echo $row['miestas'] ?>
-        </h6>
-    </div>
-</div>
-    <!----------------------------------fb ir mail-->
-<div class="row modalinisvidus3">
-    <div class="col-md-6">
-        <h5>Nuoroda</h5>
-        <h6><a id="nuoroda" href="<?php echo $row['nuoroda'] ?>">
-            <?php echo $row['nuoroda'] ?></a>
-        </h6>
-    </div>
-    <div class="col-md-6">
-        <h5>el paštas</h5>
-        <h6>
-            <?php echo $row['email'] ?>
-        </h6>
-        
-    </div>
-</div> 
-<!--    -----------------------------------------info-->
-    <div class="row">
-         <div class="col-md-12"><p>aprasymas<?php echo $row['aprasymas'] ?></p></div>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
         </div>
-<!--    div modal end-->
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+    
 
-    
-    
-    
+
 
 </div>
 </div>    
@@ -173,8 +130,8 @@ function trintiSenusSkelbimus(){
 
  ?>
 </div>
-</div>
-</div>
+
+
 
 
 

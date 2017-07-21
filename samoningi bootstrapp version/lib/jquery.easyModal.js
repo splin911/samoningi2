@@ -49,9 +49,9 @@
                 top: 'auto',
                 left: 'auto',
                 autoOpen: false,
-                overlayOpacity: 0.2,
+                overlayOpacity: 0.5,
                 overlayColor: '#000',
-                overlayClose: true, //////as pakeiciau
+                overlayClose: true,
                 overlayParent: 'body',
                 closeOnEscape: true,
                 closeButtonClass: '.close',
@@ -63,7 +63,7 @@
                     return (function (value) {
                         return value === -Infinity ? 0 : value + 1;
                     }(Math.max.apply(Math, $.makeArray($('*').map(function () {
-                        return $(this).css('z-index'); /////ash sugadinau
+                        return $(this).css('z-index');
                     }).filter(function () {
                         return $.isNumeric(this);
                     }).map(function () {
@@ -103,7 +103,7 @@
                     // When updateZIndexOnOpen is set to true, we avoid computing the z-index on initialization,
                     // because the value would be replaced when opening the modal.
                     'z-index': (o.updateZIndexOnOpen ? 0 : o.zIndex() + 1),
-                    'left' : parseInt(o.left, 10) > -1 ? o.left + 'px' : 50 + '%', ////is 50 i 25
+                    'left' : parseInt(o.left, 10) > -1 ? o.left + 'px' : 50 + '%',
                     'top' : parseInt(o.top, 10) > -1 ? o.top + 'px' : 50 + '%'
                 });
 
@@ -121,7 +121,7 @@
                         'z-index': modalZ
                     });
 
-                    $overlay.css({'z-index': overlayZ, 'display': 'block'}); //indexx sugadinau ASH
+                    $overlay.css({'z-index': overlayZ, 'display': 'block'});
 
                     if (o.onOpen && typeof o.onOpen === 'function') {
                         // onOpen callback receives as argument the modal window
