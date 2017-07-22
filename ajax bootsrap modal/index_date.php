@@ -1,18 +1,9 @@
 
 <?php  
- $connect = mysqli_connect("localhost", "root", "root", "samoningai");
 
- if (!empty($_GET['from_date']) && !empty($_GET['to_date'])) {
-     $from_date = mysqli_real_escape_string($connect, $_GET['from_date']);
-     $to_date = mysqli_real_escape_string($connect, $_GET['to_date']);
-     
-     $query = "SELECT * FROM skelbimai WHERE data_ BETWEEN '$from_date' AND '$to_date' ORDER BY data_ desc";
- } else {
-    $query = "SELECT * FROM skelbimai ORDER BY data_ desc";
- }
+include __DIR__ . '/model.php';
 
- $result = mysqli_query($connect, $query);  
- ?>  
+?>  
  <!DOCTYPE html>  
  <html>  
       <head>  
@@ -45,23 +36,27 @@
                 <br />  
                 <div id="order_table">  
                    
-                     <?php  
-                     while($row = mysqli_fetch_array($result))  
-                     {  
+                     <?php
+                        $from_date = isset($_GET['from_date']) ? $_GET['from_date'] : null;
+                        $to_date = isset($_GET['to_date']) ? $_GET['to_date'] : null;
+                            
+                        $articles = get_articles($from_date, $to_date);
+                     
+                     foreach ($articles as $article) {  
                      ?>  
                     
-<div class="col-md-4 modalinisisore view_data"  name="view" id="<?php echo $row["id"]; ?>" >
+<div class="col-md-4 modalinisisore view_data"  name="view" id="<?php echo $article["id"]; ?>" >
 
-<h3><?php echo $row['tipas'] ?></h3> 
+<h3><?php echo $article['tipas'] ?></h3> 
 
-<h2><?php echo $row['pavadinimas'] ?></h2> 
+<h2><?php echo $article['pavadinimas'] ?></h2> 
     <hr>
 <h4><i class="fa fa-compass" aria-hidden="true"></i>
-<?php echo $row['miestas'] ?></h4>
+<?php echo $article['miestas'] ?></h4>
   </a>   
     <hr>       
 <h5><i class="fa fa-calendar-o" aria-hidden="true"></i>
-<?php echo $row['data_'] ?></h5>
+<?php echo $article['data_'] ?></h5>
 
 </div> 
                     
