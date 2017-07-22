@@ -1,7 +1,16 @@
 
 <?php  
- $connect = mysqli_connect("localhost", "root", "root", "samoningai");  
- $query = "SELECT * FROM skelbimai ORDER BY data_ desc";  
+ $connect = mysqli_connect("localhost", "root", "root", "samoningai");
+
+ if (!empty($_GET['from_date']) && !empty($_GET['to_date'])) {
+     $from_date = mysqli_real_escape_string($connect, $_GET['from_date']);
+     $to_date = mysqli_real_escape_string($connect, $_GET['to_date']);
+     
+     $query = "SELECT * FROM skelbimai WHERE data_ BETWEEN '$from_date' AND '$to_date' ORDER BY data_ desc";
+ } else {
+    $query = "SELECT * FROM skelbimai ORDER BY data_ desc";
+ }
+
  $result = mysqli_query($connect, $query);  
  ?>  
  <!DOCTYPE html>  
@@ -18,18 +27,20 @@
      
       <body>  
            <br /><br />  
-           <div class="container" style="width:900px;">  
+           <div class="container" style="width:900px;">
+               <form method="get" action="index_date.php">
                 <h2 align="center">datepicker + jquery</h2>  
                 <h3 align="center">2027-07-10</h3><br />  
                 <div class="col-md-3">  
-                     <input type="text" name="from_date" id="from_date" class="form-control" placeholder="From Date" />  
+                     <input type="text" name="from_date" id="from_date" class="form-control" placeholder="From Date" value="<?= isset($_GET['from_date']) ? htmlspecialchars($_GET['from_date']) : date('Y-m-d') ?>" />  
                 </div>  
                 <div class="col-md-3">  
-                     <input type="text" name="to_date" id="to_date" class="form-control" placeholder="To Date" />  
+                     <input type="text" name="to_date" id="to_date" class="form-control" placeholder="To Date" value="<?= isset($_GET['to_date']) ? htmlspecialchars($_GET['to_date']) : '' ?>" />  
                 </div>  
                 <div class="col-md-5">  
-                     <input type="button" name="filter" id="filter" value="Filter" class="btn btn-info" />  
-                </div>  
+                     <input type="submit" name="filter" id="filter" value="Filter" class="btn btn-info" />  
+                </div>
+               </form>       
                 <div style="clear:both"></div>                 
                 <br />  
                 <div id="order_table">  
