@@ -79,6 +79,9 @@
             <div class="searchdiv">
 
                 
+        <?php
+     include_once ("output.php")
+        ?>
 
             </div>
         </div>

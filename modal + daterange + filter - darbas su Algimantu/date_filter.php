@@ -8,7 +8,7 @@
       $output = '';  
       $query = "  
            SELECT * FROM skelbimai  
-           WHERE data_ BETWEEN '".$_POST["from_date"]."' AND '".$_POST["to_date"]."'  
+           WHERE data_ BETWEEN '".$_POST["from_date"]."' AND '".$_POST["to_date"]."' ORDER BY data_ desc 
       ";  
       $result = mysqli_query($connect, $query);  
      

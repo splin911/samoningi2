@@ -1,76 +1,109 @@
+/*
 
-/* Menu
- * --------------------------------------- */
+ Menu
+ * -------------------------------- 
+*/
+
+/*
+h1 {
+    color: transparent;
+    transition: text-shadow 2s;
+    text-shadow: 0 0 11px rgba(0,0,0,0.7);
+    text-transform: uppercase;
+
+}
+
+div #hinfo:hover h1 {
+    text-shadow: 0 0 1px rgba(0,0,0,0.9);
+   
+}
+
+div #hinfo:hover h2 {
+   text-shadow: 0 0 1px rgba(0,0,0,0.9);
+}
+
+div #hinfo:hover h3 {
+   text-shadow: 0 0 1px rgba(0,0,0,0.9);
+}
+
+
+div #hinfo {
+    height: 250px;
+}
+
+h2, h3 {
+    text-align: justify;
+    text-justify: inter-word;
+    color: transparent;
+    transition: text-shadow 2s;
+    
+}
+*/
+
+
+
 #menu li {
+    
     font-size: 50px;
 	display:inline-block;
 	margin: 10px;
     color: transparent;
-    text-shadow: 0 0 7px rgba(0,0,0,0.3);
-    
+    text-shadow: 0 0 7px rgba(0,0,0,0.7);
    
 }
+
+
+#menu li a {
+    text-decoration: none;
+    color: transparent;
+     
+}
+
+#menu li a:hover {
+    text-decoration: none;
+    
+    text-shadow: 0 0 3px rgba(0,0,0,0.7);
+}
+
+
+
+#menu li a {
+    transition: text-shadow 0.3s;
+    
+}
+
+#menu li.active a:hover{
+    text-shadow: 1px 1px 4px white; 
+}
+
+
 #menu li.active{
-	color: #fff;
+	color: black;
     text-shadow: 1px 1px 1px white;
     
     
 }
 
-#menu li:hover {
-    text-shadow: 1px 1px 10px white;
-    
-}
-
-#menu li a{
-	text-decoration:none;
-	    color: transparent;
-   
-
-    
-}
-#menu li.active a:hover{
-    text-shadow: 1px 1px 4px white; 
-    
-    
-}
-
-#menu li a,
-#menu li.active a{
-	padding: 9px 18px;
-	display:block;
-    transition: text-shadow 0.5s;
-}
-#menu li.active a{
-	color: #fff;
-    text-shadow: 1px 1px 5px dimgray;
-    font-size: 54px;
-}
-#menu{
-	position:fixed;
-	top:-1%;
-	right:0%;
-	height: 40px;
-	z-index: 70;
-	width: 100%;
-	padding: 0;
-	margin:0;
-}
-
-
-/*------------------------Pauliaus Kodas---------*/
-
+/* Menu
+ * --------------------------------------- 
 
 
 
 /*-----------------------------------------BESIKEICIANTI SPALVA--------------*/
+
+html,body {
+  
+  height: 100%;
+  width: 100%;
+}
+
+
 #background1 {
     background: #bdb9ee;
     background: linear-gradient(to bottom right, #bdb9ee, #f0ccb1);
     background-image: linear-gradient(to bottom right, rgba(0,0,0,0) 0%, rgba(125, 99, 152, 1) 100%);
-    height: 880px;
     animation: background1 1s infinite;
-
+   
 }
 
 /*
@@ -127,7 +160,9 @@
     background: linear-gradient(to bottom right, red, green);
     background-image: linear-gradient(to bottom right, rgba(50, 0, 50, 0) 0%, rgba(50, 50, 120, 1) 100%);
     animation: background1 15s infinite;
+    
 }
+
 
 /*
 @keyframes background2 {    0% {
@@ -158,7 +193,12 @@
 */
 
 
-
+#background0 {
+   
+    background-image: linear-gradient(to bottom right, rgba(50, 0, 50, 0) 0%, rgba(50, 5, 120, 1) 100%);
+    
+    
+}
 
 
 
@@ -172,11 +212,15 @@
 }
 
 
-.citata {
-     color: rgba(255,255,255, 0.7);
+.citata h1 {
+     color: rgba(255,255,255, 0.8);
+    font-size: 70px;
      
 }
-
+.citata h2 {
+    font-size: 40px;
+     color: rgba(255,255,255, 0.8);
+}
 /*-------------------------------------FONT NUSTATYMAI------------END-------*/
 
 
@@ -214,41 +258,53 @@ footer {
     text-align: left;
     position: absolute;
     z-index: 10;
-    top: 98%;
+    top: 97.8%;
+
     font-size: 12px;
-    box-shadow: 4px 4px 40px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.8);
+    color: gainsboro;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.7);
 }
 /*                          -       -   PIRMASIS PUSLAPIS END-*/
 /*----------------------------------------------------DALINTIS*/
 
-
-/*
-#dalintisover {
-    overflow-y: scroll; 
-    height: 900px;
-    background-color: rgba(0, 0, 0, 0.2);
-   
+#nebutinas {
+    font-size: 15px;
 }
-*/
-
-/*
-.dalintisforma1 {
-    margin-top: 20%;
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
 }
 
-.dalintisrow {
-    margin-bottom: 200px;
+.langeliai {
+    background-color: rgba(255,255,255,0.2);
+    border: 1px black solid;
+    border-radius: 0;
+    
+}
+#field14marg {
+    margin-top: 1.5%;
+}
+#dalintiscont {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-.dalintisforma2 {
-    margin-top: 20%;
+.dalintismygtukai {
+    background-color: rgba(255,255,255,0.2);
+/*    text-transform: uppercase;*/
+/*    font-weight: bold;*/
+    color: black;
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+    font-size: 20px;
+    transition: background-color 0.3s;
 }
-*/
 
-
-
-
-
+.dalintismygtukai:hover {
+     background-color: rgba(255,255,255,0.5); 
+}
 
 /*---------------------------Round Ir LOGO--------------------END-----------*/
 
@@ -256,19 +312,18 @@ footer {
 
 
 #quote{
-	margin:-30px auto ;
-	padding: 20px;
+	
+    font-size: 30px;
 	width: 100%;
     height: 20px;
+    color: white;
    
 }
 
 #quoteContainer{
-	padding:10px;
-	margin:30px auto;
+
 	text-align: center;
-    height:70px;
-    
+ 
 }
 #buttonContainer{
 	width: 100%;
@@ -279,7 +334,6 @@ footer {
 	font-style: italic;
 	font-weight: 600;
 	text-align: center;
-    margin-top: 0.5%;
 }
 
 
@@ -294,9 +348,7 @@ label {
     margin-bottom: 15px;
     font-size: 20px;
 }
-.labelfirst {
-    margin-top: 8.2%;
-}
+
 
 .aprasymasbox {
     height: 415px;
@@ -309,20 +361,7 @@ label {
 
 
 
-/*
-.btn {
- 
-  margin: 10px;
-  padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  color: white;
-  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-  box-shadow: 0 0 2px #eee;
-  
- }
-*/
+
 
 .btndropdown {
  
@@ -411,7 +450,7 @@ label {
 
 .searchdiv {
     overflow-y: scroll; 
-    height: 600px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 1%;
 
@@ -493,6 +532,8 @@ body{
 */
 
 .modalinisisore {
+    height: 200px;
+    width: 100%;
     background-color: rgba(0,0,0,0.3);
     cursor: pointer;
     transition: background-color 0.2s;
@@ -515,7 +556,6 @@ div.modalinisisore h2 {
     font-size: 2em;
     margin-top:5%;
     margin-bottom: 5%;
-    color:crimson;
 }
 
 
@@ -524,7 +564,6 @@ div.modalinisisore h4 {
    padding: 1%;
     text-align: left;
     font-size: 20px;
-    color:crimson;
     
 }
 
@@ -543,7 +582,26 @@ div.modalinisisore hr {
 	
 }
 
-
+/* maiso datepickeriui
+div a {
+     color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+*/
+.easy-modal,
+.easy-modal-animated {
+		width: 60%;
+        height: 70%;
+		padding: 2em;
+		box-shadow: 1px 1px 3px rgba(0,0,0,0.85);
+		background-color: white;
+        color: black;
+        overflow-y: scroll; 
+        position: relative;
+       
+    
+}
 
 
 div.modalinisvidus .modalcolor {
@@ -606,6 +664,18 @@ div.modalinisvidus3 h6 {
     font-size: 17px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+		
 
 
 

@@ -102,10 +102,9 @@ tinkamas_rodyti, nuoroda, unikalusID, laisvas1, laisvas2) VALUES ('$pavadinimas'
             echo "Skelbimo ideti nepavyko:" . mysqli_error($connect) . " <br>"; 
          } else {
               
-            echo "Skelbimas idetas:" . mysqli_error($connect) . " <br>"; }}
-//              header("Location: redirect.php");
-//              die();         
-//   } }
+              header("Location: redirect.php");
+              die();         
+   } }
 
 kurtiSkelbima($pavadinimas, $data_, $email, $miestas, $tipas, $registracija, $aprasymas, $tinkamas_rodyti, $unikalusid, $nuoroda);
     

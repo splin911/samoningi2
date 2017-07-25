@@ -25,41 +25,35 @@
     
     <div class="container">
  
-         <br><br>
+         
             
             <div class="row">
-                <div  ></div>
-                <div data-tilt class="col-xs-4 col-xs-offset-4  ">
+               
+                <div data-tilt class="col-xs-4 col-xs-offset-4 turinys  ">
                     <div>
                         <a href="#" id="quoteButton">
                             <img data-tilt id="round" class="round img-responsive center-block" src="img/round1.png" alt="samoningai" /></a>
                     </div>
                 
-                </div>
+                </div></div>
                  
         <!---------------             ---------------------citata ------------>
-                <br><br><br><br>
-            <div class="col-xs-4">
+               
+            <!---------------             ---------------------citata ------------>
+        <br> 
+        <br>
+                <div class="row ">
+            <div class="col-xs-10 col-xs-offset-1 ">
                 <div id="quote">
-
-                    <div id="quoteContainer" class="citata  ">
+                    <div id="quoteContainer" class="citata">
                         <p></p>
                         <p id="quoteGenius"></p>
                     </div>
                 </div>
             </div>
-                  </div>
+                    </div>
+                  
         
-            <!---------------             ---------------------citata ------------>
-        <br> 
-       <div class="row">
-           <div class="col-xs-6 col-xs-offset-8" id="hinfo">
-               
-               <h2>Kas vyksta Lietuvoje?
-                   Renginiai, paskaitos, meditacijos ir praktikos vienoje vietoje.</h2>
-               <h3>Dalinkimės atsakingai ir nuoširdžiai</h3>
-               <h1><strong>Informacija sąmoningiems</strong></h1></div>
-        </div>
         
         
       

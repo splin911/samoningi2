@@ -76,50 +76,40 @@ function trintiSenusSkelbimus(){
 </script>
 
 <div id="table-container">
-
     <?php
-  $query="SELECT * FROM skelbimai WHERE
-  (tinkamas_rodyti='tinkamas') OR (unikalusID='skelbejas') OR (unikalusID='skelbejas2')"; 
+  
+  $query="SELECT * FROM skelbimai"; 
   $output=mysqli_query($con,$query);
+    
+//     WHERE miestas='Kaunas'
+    
+
   ?>
+  
+<!--
+<th>Data</th>
+<th>Email</th>
+<th>Miestas</th>
+<th>Tipas</th>
+<th>Registracija</th>
+<th>Aprasymas</th>
+-->
+<!--
+<h1 class="easy-modal-open" href=".modal1" >Mano modalas</h1>
+<h1 class="easy-modal modal1 easy-modal-close">Tekstux</h1>
+-->
+</tr>
+    
     <?php
+
  $uniqueid = 1;
   while($row = mysqli_fetch_assoc($output))
         {
            ?> 
-  
-<div class="container">
-  <h2>Modal Example</h2>
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target=".myModal<?php echo $uniqueid; ?>">Open Modal</button>
 
-  <!-- Modal -->
-  <div class="modal fade" class="myModal<?php echo $uniqueid; ?>" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-    
-    
-
-
-
-</div>
-</div>    
+<h1 class="easy-modal-open" href=".modal1<?php echo $uniqueid; ?>"><?php echo $row['pavadinimas'] ?></h1>
+<h1 class="easy-modal  easy-modal-close modal1<?php echo $uniqueid; ?>"><?php echo $row['data_'] . $row['pavadinimas'] ?></h1>
+            
     
         
         <?php
@@ -129,11 +119,9 @@ function trintiSenusSkelbimus(){
 
 
  ?>
-</div>
 
-
-
-
+    
+     
 
 
 
