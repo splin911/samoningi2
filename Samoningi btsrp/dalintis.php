@@ -124,8 +124,43 @@
                         <textarea name="aprasymas" id="field3" required="true" oninvalid="this.setCustomValidity('Aprašykite savo renginį!')" oninput="setCustomValidity('')" maxlength="500" min="10" class="aprasymasbox langeliai"></textarea>
                     </div>
                     <input type="submit" name="sub-1" value="Pateikti duomenis" class="btn dalintismygtukai" />
-
                     <input type="reset" name="res-1" id="res-1" value="Ištrinti duomenis" class=" btn dalintismygtukai" />
+                    <button type="button" class="btn atmintinesmygtukas" data-toggle="modal" data-target="#dalintismodal">Atmintinė</button>
+
+  <!-- Modal -->
+  <div class="modal fade " id="dalintismodal" role="dialog">
+    <div class="modal-dialog ">
+    
+      <!-- Modal content-->
+      <div class="modal-content bckmodal">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><strong>Ką svarbu žinoti naudojantis platforma</strong></h4>
+        </div>
+        <div class="modal-body ">
+          <h2>Šis puslapis skirtas dalintis jūsų skelbimais. Skelbimai tampa matomi tik po patikros.
+               <hr>
+            Prašome nedėti turinio kuris:</h2>
+            <ul>
+                <li>Gali įžeisti vienokią ar kitokią bendruomenę</li>
+                <li>Žemina kitus ar iškelia savo tradiciją aukščiau</li>
+                <li>Renginyje vartojami svaigalai ar kitos nesąmoningumą skatinančios priemonės</li>
+            </ul>
+            <hr>
+            <h4> Jei norite skelbimus talpinti nuolatos, praneškite į samoningi@gmail.com apie savo intenciją ir norą. 
+                Taip jums bus suteiktas unikalusID. Jūsų skelbimai atsiras anksčiau, tačiau vis vien praeis patikrą</h4>
+             <hr>
+            <h5>Tinklapio samoningi.lt autorius neatsako už skelbimų turinį, pobūdį ar tipą</h5>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<!--                    modal end-->
+                
                 </div>
                 <!------------------------------------------FORMA END-------------------------------------->
 
@@ -141,6 +176,7 @@
     <script src="lib/jquery-ui.js"></script>
     <script type="text/javascript" src="lib/datepicker-lt.js"></script>
     <script src="lib/jquery.form-validator.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
    
 <script>    
      $.validate({
