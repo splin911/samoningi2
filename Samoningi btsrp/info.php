@@ -28,10 +28,9 @@
          <br>
             
             <div class="row">
-          <h1><strong>Informacija sąmoningiems</strong></h1>
-               <h3>Kas vyksta Lietuvoje?
-                   Renginiai, paskaitos, meditacijos ir praktikos vienoje vietoje </h3>
-               <p>Daug nuostabių vietų ir veiklų suranda savo auditoriją uždarose fb grupėse bei skelbimuose. Visgi, šios platformos dėka galima ištraukti 
+          <h1><strong>Renginiai, paskaitos, meditacijos ir praktikos vienoje vietoje</strong></h1>
+               <h3> </h3>
+               <p>Daug nuostabių vietų ir veiklų suranda savo auditoriją uždarose fb grupėse bei skelbimuose. Šios platformos dėka galima ištraukti 
                   renginius ar iniciatyvas į dienos šviesą</p> 
                 <h3>Dalinkimės atsakingai ir nuoširdžiai</h3>
                
@@ -62,6 +61,7 @@
             <hr>
             <h4> Jei norite skelbimus talpinti nuolatos, praneškite į samoningi@gmail.com apie savo intenciją ir norą. 
                 Taip jums bus suteiktas unikalusID. Jūsų skelbimai atsiras anksčiau, tačiau vis vien praeis patikrą</h4>
+            
              <hr>
             <h5>Tinklapio samoningi.lt autorius neatsako už skelbimų turinį, pobūdį ar tipą</h5>
         </div>
