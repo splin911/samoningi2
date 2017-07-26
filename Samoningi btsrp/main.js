@@ -74,22 +74,33 @@
 
 $(document).ready(function(){
    
-    
- $.each($('#menu').find('li'), function() {
-        $(this).toggleClass('active', 
-            window.location.pathname.indexOf($(this).find('a').attr('href')) > -1);
-    }); 
 
 
-function redirect(){
+function redirect(){            ///// redirect.php dalykelis
 $('.redirect').fadeOut(1000);
 $('#cit').hide().delay(1000).fadeIn(1000);
 };
 redirect();
 
-
     
+    var url = window.location.href; /////// menu.php lauko saugotojas
 
+// Will only work if string in href matches with location
+$('.menu a[href="'+ url +'"]').addClass('active');
+
+// Will also work for relative and absolute hrefs
+$('#menu a').filter(function() {
+    return this.href == url;
+}).addClass('active');
+    
+    function myFunction() {         ///// menu.php sumazintojas.
+    var x = document.getElementById("menu");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
     
     
     

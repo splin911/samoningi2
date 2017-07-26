@@ -20,9 +20,7 @@
      include_once ("menu.php")
         ?>
     
-     <?php
-     include_once ("footer.php")
-        ?>
+    
          
          
 
@@ -30,7 +28,7 @@
 
     <div >
         <div class="container-fluid" id="dalintiscont" >
-            <div class="row"><br><br><br><br><br>
+            <div class="row rowresp"><br><br><br><br>
 
                 <!------------------------------------------FORMA 1---------------------------------------->
                 <div class="col-md-3 col-md-offset-0 formosmedijos">
@@ -168,8 +166,13 @@
             </div>
         </div>
     </div>
-  
 
+    </body>
+
+    
+ <?php
+     include_once ("footer.php")
+        ?>
     <script src="https://use.fontawesome.com/111b848bf1.js"></script>   
     <script type="text/javascript" src="main.js"></script>
     <script src="lib/jquery-3.2.1.min.js"></script>
@@ -177,6 +180,7 @@
     <script type="text/javascript" src="lib/datepicker-lt.js"></script>
     <script src="lib/jquery.form-validator.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
    
 <script>    
      $.validate({

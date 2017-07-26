@@ -87,7 +87,9 @@
         </div>
     </div>
 </div>
-
+ <?php
+     include_once ("footer.php")
+        ?>
 
     <script src="https://use.fontawesome.com/111b848bf1.js"></script>
     <script src="lib/jquery-3.2.1.min.js"></script>
