@@ -11,16 +11,16 @@
 
 
       <body>
-           <br /><br />
+    
            <div class="container" style="width:900px;">
                <div class="row">
                <form method="get" action="index_date.php">
                 <h2 align="center">datepicker + jquery</h2>
-                <h3 align="center">2027-07-10</h3><br />
                    
+ <!--                         Miesto ir tipo filtru pradzia                                -->
                   <div class="col-md-3" id="table-container">  
-                     
-                    <select class="btn-default dropdown-toggle dropdown" name="value" id="tipas">
+<!--                      ar teisingai padaviau value? narsykles adreso lauke  duomenys atsispindi-->
+                    <select class="btn-default dropdown-toggle dropdown" name="value" id="tipas"> 
                         <option value=""></option>
                         <option value="Meditacijos praktika, meditacija">Meditacijos praktika, meditacija</option>
                         <option value="Paskaita">Paskaita</option>
@@ -29,7 +29,7 @@
                         <option value="Kita">Kita</option>
                     </select>
                      
-                    <select class=" btn-default dropdown-toggle dropdown" name="value" id="miestai">
+                    <select class="btn-default dropdown-toggle dropdown" name="value" id="miestai">
                             <option value=""></option>
                             <option value="Vilnius">Vilnius</option>
                             <option value="Kaunas">Kaunas</option>
@@ -55,7 +55,7 @@
                       <input type="submit" name="filter" id="" value="Filter Tipas " class="btn btn-info" />
                       <input type="submit" name="filter" id="" value="Filter Miestas " class="btn btn-info" />
                       </div>
-                   
+<!--     Miesto ir tipo filtru pabaiga                           -->
                    
                 <div class="col-md-3">
                      <input type="text" name="from_date" id="from_date" class="form-control" placeholder="From Date" value="<?= isset($_GET['from_date']) ? htmlspecialchars($_GET['from_date']) : date('Y-m-d') ?>" />
@@ -133,7 +133,7 @@
 
 
 
- <script> ///skirtas modal
+ <script> ///----------------------------------------skirtas modal veikimui
  $(document).ready(function(){
       $('.view_data').click(function(){
            var employee_id = $(this).attr("id");
@@ -153,7 +153,7 @@
 
 
 
- <script> /// skirtas datepicker iskviesti
+ <script> ///---------------------------------------- skirtas datepicker iskviesti
       $(document).ready(function(){
            $.datepicker.setDefaults({
                 dateFormat: 'yy-mm-dd'
@@ -180,7 +180,7 @@
                 }
                 else
                 {
-                     alert("Please Select Date");
+                     alert("Pasirinkite datą");
                 }
            });
       });
@@ -189,7 +189,7 @@
 
 
 
-<script>  //// skirtas tipui
+<script>  //// ---------------------------------------- ajax skirtas tipui
     $(document).ready(function()
                      {
         $("#fetchval").on('change',function()

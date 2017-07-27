@@ -28,9 +28,34 @@ function get_articles($from_date = null, $to_date = null)
     return $articles;
 }
 
-function filtruotiTipa($tipas) {
+/// as parasiau funkcija, virustines nekeiciau
+
+function get_tipas($tipas) {
+    global $connect;
     $tipas = mysqli_real_escape_string($connect, $tipas);
-    $query = "SELECT * FROM skelbimai ORDER BY tipas desc";
+    $query = "SELECT * FROM skelbimai WHERE tipas = '$tipas'";
+    $result = mysqli_query($connect, $query);
     
+    $tipai = [];
+    
+    while($row = mysqli_fetch_array($result)) { // kaip suprantu sis while bega per db ieskodamas 
+                                                // pagal mano query salyga?
+        $tipai[]= $row;
+    }
+    
+    return $tipai;
 }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
