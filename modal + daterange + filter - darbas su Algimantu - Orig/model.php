@@ -28,9 +28,4 @@ function get_articles($from_date = null, $to_date = null)
     return $articles;
 }
 
-function filtruotiTipa($tipas) {
-    $tipas = mysqli_real_escape_string($connect, $tipas);
-    $query = "SELECT * FROM skelbimai ORDER BY tipas desc";
-    
-}
-    
+

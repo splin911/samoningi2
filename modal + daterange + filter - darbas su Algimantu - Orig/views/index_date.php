@@ -13,62 +13,15 @@
       <body>
            <br /><br />
            <div class="container" style="width:900px;">
-               <div class="row">
                <form method="get" action="index_date.php">
                 <h2 align="center">datepicker + jquery</h2>
                 <h3 align="center">2027-07-10</h3><br />
-                   
-                  <div class="col-md-3" id="table-container">  
-                     
-                    <select class="btn-default dropdown-toggle dropdown" name="value" id="tipas">
-                        <option value=""></option>
-                        <option value="Meditacijos praktika, meditacija">Meditacijos praktika, meditacija</option>
-                        <option value="Paskaita">Paskaita</option>
-                        <option value="Stovykla, festivalis, retritas">Stovykla, festivalis, retritas</option>
-                        <option value="Mokymai">Mokymai</option>
-                        <option value="Kita">Kita</option>
-                    </select>
-                     
-                    <select class=" btn-default dropdown-toggle dropdown" name="value" id="miestai">
-                            <option value=""></option>
-                            <option value="Vilnius">Vilnius</option>
-                            <option value="Kaunas">Kaunas</option>
-                            <option value="Klaipėda">Klaipėda</option>
-                            <option value="Šiauliai">Šiauliai</option>
-                            <option value="Panevėžys">Panevėžys</option>
-                            <option value="Alytus">Alytus</option>
-                            <option value="Marijampolė">Marijampolė</option>
-                            <option value="Utena">Utena</option>
-                            <option value="Telšiai">Telšiai</option>
-
-                            <option value="Vilniaus apskr.">Vilniaus apskritis</option>
-                            <option value="Kauno apskr.">Kauno apskritis</option>
-                            <option value="Klaipėdos apskr.">Klaipėdos apskritis</option>
-                            <option value="Šiaulių apskr.">Šiaulių apskritis</option>
-                            <option value="Panevežio apskr.">Panevežio apskritis</option>
-                            <option value="Alytaus apskr.">Alytaus apskritis</option>
-                            <option value="Marijampolės apskr.">Marijampolės apskritis</option>
-                            <option value="Tauragės apskr.">Tauragės apskritis</option>
-                            <option value="Utenos apskr.">Utenos apskritis</option>
-                            <option value="Telšių apskr.">Telšių apskritis</option>
-                        </select>
-                      <input type="submit" name="filter" id="" value="Filter Tipas " class="btn btn-info" />
-                      <input type="submit" name="filter" id="" value="Filter Miestas " class="btn btn-info" />
-                      </div>
-                   
-                   
                 <div class="col-md-3">
                      <input type="text" name="from_date" id="from_date" class="form-control" placeholder="From Date" value="<?= isset($_GET['from_date']) ? htmlspecialchars($_GET['from_date']) : date('Y-m-d') ?>" />
                 </div>
-                   
                 <div class="col-md-3">
-                    
                      <input type="text" name="to_date" id="to_date" class="form-control" placeholder="To Date" value="<?= isset($_GET['to_date']) ? htmlspecialchars($_GET['to_date']) : '' ?>" />
                 </div>
-                   <div class"col-md-3">
-                       
-                   </div>
-                   
                 <div class="col-md-5">
                      <input type="submit" name="filter" id="filter" value="Filter" class="btn btn-info" />
                 </div>
@@ -105,7 +58,7 @@
            <div class="modal-content">
                 <div class="modal-header">
                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                     <h4 class="modal-title">Skelbimo detalės</h4>
+                     <h4 class="modal-title">Employee Details</h4>
                 </div>
                 <div class="modal-body" id="employee_detail">
                  </div>
@@ -115,7 +68,7 @@
            </div>
       </div>
  </div>
-</div>
+
 
 
      <script src="lib/font-awesome.css"></script>
@@ -133,7 +86,7 @@
 
 
 
- <script> ///skirtas modal
+ <script>
  $(document).ready(function(){
       $('.view_data').click(function(){
            var employee_id = $(this).attr("id");
@@ -153,7 +106,7 @@
 
 
 
- <script> /// skirtas datepicker iskviesti
+ <script>
       $(document).ready(function(){
            $.datepicker.setDefaults({
                 dateFormat: 'yy-mm-dd'
@@ -185,33 +138,3 @@
            });
       });
  </script>
-
-
-
-
-<script>  //// skirtas tipui
-    $(document).ready(function()
-                     {
-        $("#fetchval").on('change',function()
-                         {
-            var keyword = $(this).val();
-            $.ajax(
-            {
-                url:'date_filter.php',
-                type:'POST',
-                data:'request='+keyword,
-                
-                beforeSend:function()
-                {
-                    $("#table-container").html('Working...');
-                    
-                },
-                success:function(data)
-                {
-                    $("#table-container").html(data);
-                },
-            });
-        });
-    });
-    
-</script>
