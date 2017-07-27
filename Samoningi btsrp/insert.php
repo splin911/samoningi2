@@ -77,7 +77,7 @@ $mail->Body    =
     "<h3>Aprasymas</h3> " . nl2br($aprasymas) . "<br>" ; 
    
     
-//$mail->AltBody = 'Nu cia jei jau nieks neveiks.../n : kiek kainuoja ... ???'; //senasis
+
 $mail->AltBody = 'Nu cia jei jau nieks neveiks.../n : kiek kainuoja ... ???';
 
 if(!$mail->send()) {
