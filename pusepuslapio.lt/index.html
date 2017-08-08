@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perspective Mockup Slideshow | Demo 3</title>
+    <meta name="description" content="A perspective slideshow based on Franklin Ta's CSS matrix3d transforms" />
+    <meta name="keywords" content="perspective, mockup, slideshow, transform, 3d, matrix, css" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/mockup3.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>    
+    <div id="newcontainer">
+        <!-- Top Navigation -->
+        <div class="codrops-top clearfix">
+
+            <span class="right"><a class="codrops-icon codrops-icon-drop" href=""><span>pusepuslapio@gmail.com</span></a>
+            <span class="right"><a class="codrops-icon" href=""><span>+370 637 10812</span></a>
+            </span>
+        </div>
+        <div id="wrap" class="wrap">
+            <div class="mockup">
+                <img class="mockup__img" src="img/mockup3.jpg" />
+                <div id="mobile" class="mobile">
+                    <ul id="slideshow" class="slideshow">
+                        <li class="slideshow__item"><img src="img/small/3.png" /></li>
+                        <li class="slideshow__item"><img src="img/small/2.png" /></li>
+                        <li class="slideshow__item"><img src="img/small/1.png" /></li>
+                        <li class="slideshow__item"><img src="img/small/4.png" /></li>
+                    </ul>
+                </div>
+                <header class="codrops-header">
+                    <h1><span>internetinių</span> svetainių <span class="isbraukti">prieškambarių</span>kūrimas</h1>
+                </header>
+         
+            </div>
+        </div>
+    </div>
+    <!-- /newcontainer -->
+    <a id="btn1" class="waves-effect waves-light btn modal-trigger" href="#modal1"><i class="material-icons right">cloud</i>kas esame mes?</a>
+    <a id="btn2" class="waves-effect waves-light btn modal-trigger" href="#modal2"><i class="material-icons right">cloud</i>kas esate jūs?</a>
+    <a id="btn3" class="waves-effect waves-light btn modal-trigger" href="#modal3"><i class="material-icons right">cloud</i>darbai</a>
+
+
+    <!-- ---------------------------------------------Apie mus-->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Kas esame mes?</h4>
+            <ul class="collapsible popout" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">ac_unit</i>
+                        <h2>Jūsų svetainei trūksta ugnies?</h2>
+                    </div>
+                    <div class="collapsible-body"><span>Statistiškai svetainę reikėtų atnaujinti bent kas metus (internetinę). Tačiau tai neturi nieko bendra su madų vaikymusi ar stiliais (gal ir turi).
+                                            Naujosios technologijos, išmanieji telefonai ir įrenginiai atnaujinami ypatingu greičiu - taigi puslapis sensta proporcingai. Mes suteiksime svetainei žaismingumo!</span>
+                    </div>
+                </li>
+                <li>
+
+                    <div class="collapsible-header"><i class="material-icons">account_circle</i>
+                        <h2>Neturite savo asmeninės svetainės?</h2>
+                    </div>
+                    <div class="collapsible-body"><span>Gal ir reikėtų? O gal ir ne. Spręsti jums, visgi pasibandžius su <span class="italic">TVS (pvz.: wordpress)</span> šablonais, facebook parduotuvėmis ateina laikas žengti į platesnius vandenis ir turėti produktą kuris sukurtas būtent jums</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">group</i>
+                        <h2>Niekas nesilanko jūsų svetainėje, <span class="isbraukti">koridoriuje</span>?</h2>
+                    </div>
+                    <div class="collapsible-body"><span>Gal teko girdėti apie: <span class="italic">SEO, Google optimization, Adwords?</span> Visgi, tuo rūpinamės mes. Nei vieno puslapio nepaleidžiame jo neužregistravę paieškos sistemose. Toliau pagal poreikį seka puslapio reklama.</span>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">art_track</i>
+                        <h2>Aprašymai standartiški ir besikartojantys?</h2>
+                    </div>
+                    <div class="collapsible-body"><span>Taip, ištisus lapus galima nukopijuoti kelių mygtukų pagalba, tačiau lankytojų tai nedomina - o paieškos robotai irgi į tai irgi žiūri ne kaip.
+                                            Trumpai tariant - galime suteikti profesionalų žurnalistinį jūsų veiklos aprašymą.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">music_note</i>
+                        <h2>Vestuvėms, gimtadieniui ieškote muzikantų?</h2>
+                    </div>
+                    <div class="collapsible-body"><span>Deja, anksčiau dar išbėgdavome į sceną, tačiau dabar prilipom prie ekranų..</span></div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-light btn">Aišku</a>
+        </div>
+    </div>
+    <!-- ---------------------------------------------Apie mus-->
+    <!-- ---------------------------------------------Form-->
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Susisiekime</h4>
+            <div class="row">
+                <div id="form-messages"></div>
+		<form id="ajax-contact" method="post" action="mailer.php">
+               <div class="row">
+                        <div class="input-field col s6">
+                            <input name="vardas" id="vardas" type="text" class="validate" length="15" required="required"  oninvalid="this.setCustomValidity('Pataisykite arba užpildykite langelį')"
+ oninput="setCustomValidity('')"></input>
+                            <label for="vardas">Kuo jūs vardu<span class="redstar">*</span></label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input name="email" id="email" type="email" class="validate" required="required" oninvalid="this.setCustomValidity('Pataisykite arba užpildykite langelį')"
+ oninput="setCustomValidity('')">
+                            <label data-error="tokio email būti negali!" data-success="teisingai!" for="email" length="40">Koks jūsų email?<span class="redstar">*</span></label>
+                        </div>
+                    </div>
+            
+            
+                    
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input name="joke" id="joke" type="text">
+                            <label for="joke">Ar norite viso ar pusės puslapio?</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="number" name="number" type="number" class="validate" required="required" oninvalid="this.setCustomValidity('Pataisykite arba užpildykite langelį')"
+ oninput="setCustomValidity('')">
+                            <label data-error="tokio nr būti negali!" data-success="teisingai!" data-length="12" for="number">Koks jūsų kont. telefonas?<span class="redstar">*</span></label>
+                        </div>
+                         </div>
+            
+            
+                        
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea name="aprasymas" id="aprasymas" class="materialize-textarea" length="120" required="required" oninvalid="this.setCustomValidity('Pataisykite arba užpildykite langelį')"
+ oninput="setCustomValidity('')"></textarea>
+                                <label for="aprasymas">Jūsų pageidavimai<span class="redstar">*</span></label>
+                            </div>
+                            </div>          
+
+			<div class="field">
+         <br>
+				<button  class="waves-effect waves-light btn" type="submit" >Siųsti</button>
+              
+			</div>	
+		</form>
+                
+            <div class="modal-footer">
+                <a href="#!" id="parastinis" class="modal-action modal-close waves-effect waves-light btn">Atšaukti</a>
+            </div>
+        </div></div>
+        </div>
+        <!-- ---------------------------------------------Form-->
+        
+        
+        <!-- ---------------------------------------------Gallery-->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+    <h4>Darbai</h4>
+        
+         <div class="row">
+<div class="input-field col s4">
+<a href="img/darbai/samoningi.PNG" data-lightbox="roadtrip"><img class="thumb" src="img/darbai/samoningi.PNG" alt="samoningi.lt"></a>
+</div>
+
+<div class="input-field col s4">
+<a href="img/darbai/samoningi2.PNG" data-lightbox="roadtrip"><img class="thumb" src="img/darbai/samoningi2.PNG" alt="samoningi.lt"></a>
+</div>
+
+<div class="input-field col s4">
+<a href="img/darbai/samoningi3.PNG" data-lightbox="roadtrip"><img class="thumb" src="img/darbai/samoningi3.PNG" alt="samoningi.lt"></a>
+</div>
+        </div>
+        
+     
+
+
+
+
+
+        
+ 
+
+        
+    </div>
+    <div class="modal-footer">
+     <a href="#!" class="modal-action modal-close waves-effect waves-light btn">Uždaryti</a>
+    </div>
+  </div>
+        <!-- ---------------------------------------------Gallery-->
+
+
+
+
+
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js'></script>
+        <script src="js/classie.js"></script>
+        <script src="js/mainslide.js"></script>
+	    <script src="js/mailer.js"></script>
+	    <script src="js/lightbox.js"></script>
+	    
+        
+        <script src="js/main.js"></script>
+
+        <script>
+            (function() {
+                new Slideshow(document.getElementById('slideshow'));
+
+                /* Mockup responsiveness */
+                var body = docElem = window.document.documentElement,
+                    wrap = document.getElementById('wrap'),
+                    mockup = wrap.querySelector('.mockup'),
+                    mockupWidth = mockup.offsetWidth;
+
+                scaleMockup();
+
+                function scaleMockup() {
+                    var wrapWidth = wrap.offsetWidth,
+                        val = wrapWidth / mockupWidth;
+
+                    mockup.style.transform = 'scale3d(' + val + ', ' + val + ', 1)';
+                }
+
+                window.addEventListener('resize', resizeHandler);
+
+                function resizeHandler() {
+                    function delayed() {
+                        resize();
+                        resizeTimeout = null;
+                    }
+                    if (typeof resizeTimeout != 'undefined') {
+                        clearTimeout(resizeTimeout);
+                    }
+                    resizeTimeout = setTimeout(delayed, 50);
+                }
+
+                function resize() {
+                    scaleMockup();
+                }
+            })();
+        </script>
+
+</body>
+
+</html>
