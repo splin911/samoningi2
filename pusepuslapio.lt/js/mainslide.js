@@ -1,13 +1,4 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2014, Codrops
- * http://www.codrops.com
- */
+
 ;( function() {
 
 	'use strict';
@@ -55,7 +46,7 @@
 
 	Slideshow.prototype.options = {
 		start : 0,
-		interval : 3500
+		interval : 9500
 	}
 
 	Slideshow.prototype._startSlideshow = function() {

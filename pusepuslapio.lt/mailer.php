@@ -1,12 +1,11 @@
    <?php   
 
-    require_once 'lib/lib/PHPMailerAutoload.php';
+    require_once 'lib/PHPMailerAutoload.php';
     
 $mail = new PHPMailer;
 //    print_r($_POST);
     $email = $_POST['email']; 
     $vardas = $_POST['vardas'];   
-    $joke= $_POST['joke'];
     $number= $_POST['number'];
     $aprasymas = $_POST['aprasymas'];   
 
@@ -34,13 +33,12 @@ $mail->Body    =
     "<h3>Vardas</h3> " . $vardas . "<br>" .
     "<h3>Kontaktinis Email</h3> " . $email . "<br>" .
     "<h3>Kontaktinis Nr</h3> " . $number . "<br>" .
-    "<h3>Ar zmogus turi humoro jausmą? Ar jam reikia viso ar puses psl? :D</h3> " . $joke . "<br>" .
     "<h3>Aprasymas</h3> " . nl2br($aprasymas) . "<br>" ; 
    
 
 
 if(!$mail->send()) {
-    echo 'Žinotės išsiųsti nepavyko. Susisiekite: pusepuslapio@gmail.com';
+    echo 'Žinutės išsiųsti nepavyko. Susisiekite: pusepuslapio@gmail.com';
    
 } else {
     echo 'Ačiū, susisieksime!';
